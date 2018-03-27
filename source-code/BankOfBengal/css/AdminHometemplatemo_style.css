@@ -1,0 +1,86 @@
+/*
+CSS Credit: Nirmallya Kundu
+*/
+#templatemo_topbar {
+	float: left;
+	height: 36px;
+	width: 850px;
+	padding: 0 50px;
+	margin-bottom: 10px;	
+}
+
+#languagebox {
+	float: right;
+	padding-bottom: 5px;
+	padding-right: 5px;
+	background: #848688;
+	border-left: 1px #bcbcbc solid;	
+	border-right: 1px #bcbcbc solid;	
+	border-bottom: 1px #bcbcbc solid;
+}
+
+#languagebox img{
+	float: left;
+	border: 1px solid #FFFFFF;
+	margin-left: 5px;
+	margin-top: -1px;
+}
+
+#templatemo_header {
+	float: left;
+	height: 60px;
+	width: 850px;
+	padding: 0 50px;
+	margin-bottom: 10px;
+}
+
+#templatemo_logo {
+	float: left;
+	height: 55px;
+	width: 300px;
+}
+
+#templatemo_logo img {
+	float: left;
+	border: none;
+	padding-right: 10px;
+}
+
+#templatemo_sitetitle {
+	padding: 22px 0 0 05px;
+	font-size: 180%;
+	font-weight: bold;
+	color: #333333;
+}
+
+#templatemo_login {
+	float: right;
+	height: 55px;
+	width: 530px;
+}
+
+
+#templatemo_banner {
+	clear: both;
+	float: left;
+	width: 750px;
+	height: 180px;
+	padding: 30px 150px 0 50px;
+	margin-bottom: -25px;
+	background: url(images/bannerBG.gif) no-repeat;
+}
+
+#templatemo_banner h1 {
+	font-size: 2.5em;
+	margin-bottom: 10px;
+}
+
+#templatemo_services {
+	clear: both;
+	float: left;
+	width: 900px;
+	height: 272px;
+	padding-left: 50px;
+	margin-bottom: 25px;
+}
+

@@ -1,0 +1,251 @@
+insert into adminaccount values("nirmallya","abcd","0","Nirmallya Kundu","nk.nirmallya.kundu@gmail","true");
+
+insert into  application(applicationno) values(1);
+
+insert into news(heading,details,timestamp1,status) values("This Is A Test 1","This is a test whether the message can be retrieved from the database",CURRENT_TIMESTAMP(),"true");
+insert into news(heading,details,timestamp1,status) values("This Is A Test 2","This is a test whether the message can be retrieved from the database",CURRENT_TIMESTAMP(),"true");
+insert into news(heading,details,timestamp1,status) values("This Is A Test 3","This is a test whether the message can be retrieved from the database",CURRENT_TIMESTAMP(),"true");
+insert into news(heading,details,timestamp1,status) values("This Is A Test 4","This is a test whether the message can be retrieved from the database",CURRENT_TIMESTAMP(),"true");
+
+insert into bankconstraints (name,value,type) values("min_account_balance","500","INR");
+insert into bankconstraints (name,value,type) values("money_transfer_charge","1","%");
+
+
+
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",7,14,5.00,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",15,29,5.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",30,45,6.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",46,60,7.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",61,90,7.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",91,179,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",180,269,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",270,364,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",365,729,9.05,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",730,1094,9.05,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",1095,1824,9.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",1825,3649,9.75,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",7,14,5.10,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",15,29,5.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",30,45,6.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",46,60,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",61,90,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",91,179,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",180,269,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",270,364,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",365,729,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",730,1094,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",1095,1824,9.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",1825,3649,9.85,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",7,14,5.10,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",15,29,5.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",30,45,6.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",46,60,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",61,90,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",91,179,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,prematurepenalty,interest,status)
+  values("public","minor",180,269,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",270,364,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",365,729,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",730,1094,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",1095,1824,9.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",1825,3649,9.85,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",7,14,5.20,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",15,29,5.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",30,45,6.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",46,60,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",61,90,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",91,179,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",180,269,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",270,364,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",365,729,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",730,1094,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",1095,1824,9.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",1825,3649,9.95,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",7,14,5.20,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",15,29,5.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",30,45,6.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",46,60,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",61,90,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",91,179,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",180,269,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",270,364,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",365,729,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",730,1094,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",1095,1824,9.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",1825,3649,9.95,1.00,"true");
+
+insert into stateandcity(state,city) values('Andhra Pradesh','Hyderabad');
+insert into stateandcity(state,city) values('Andhra Pradesh','Visakhapatnam');
+insert into stateandcity(state,city) values('Andhra Pradesh','Vijayawada');
+insert into stateandcity(state,city) values('Andhra Pradesh','Warangal');
+insert into stateandcity(state,city) values('Andhra Pradesh','Guntur');
+insert into stateandcity(state,city) values('Andhra Pradesh','Nellore');
+insert into stateandcity(state,city) values('Andhra Pradesh','Rajahmundry');
+insert into stateandcity(state,city) values('Andhra Pradesh','Kurnool');
+insert into stateandcity(state,city) values('Andhra Pradesh','Tirupati');
+insert into stateandcity(state,city) values('Andhra Pradesh','Kakinada');
+
+insert into stateandcity(state,city) values('West Bengal','Kolkata');
+insert into stateandcity(state,city) values('West Bengal','Howrah');
+insert into stateandcity(state,city) values('West Bengal','Darjeeling');
+insert into stateandcity(state,city) values('West Bengal','Barasat');
+insert into stateandcity(state,city) values('West Bengal','Kharagpur');
+insert into stateandcity(state,city) values('West Bengal','Bardhaman');
+insert into stateandcity(state,city) values('West Bengal','Asansol');
+insert into stateandcity(state,city) values('West Bengal','Durgapur');
+insert into stateandcity(state,city) values('West Bengal','Murshidabad');
+insert into stateandcity(state,city) values('West Bengal','Barrackpore');
+
+insert into stateandcity(state,city) values('Assam','Karimganj');
+insert into stateandcity(state,city) values('Assam','Cachar');
+insert into stateandcity(state,city) values('Assam','Kamrup');
+insert into stateandcity(state,city) values('Assam','Kamrup Metro');
+insert into stateandcity(state,city) values('Assam','Karbi Anglong');
+insert into stateandcity(state,city) values('Assam','Kokrajhar');
+insert into stateandcity(state,city) values('Assam','Golaghat');
+insert into stateandcity(state,city) values('Assam','Goalpara');
+insert into stateandcity(state,city) values('Assam','Chirang');
+insert into stateandcity(state,city) values('Assam','Dibrugarh');
+
+insert into stateandcity(state,city) values('Goa','Mapusa');
+insert into stateandcity(state,city) values('Goa','Margao');
+insert into stateandcity(state,city) values('Goa','North Goa');
+insert into stateandcity(state,city) values('Goa','Old Goa');
+insert into stateandcity(state,city) values('Goa','Panaji');
+insert into stateandcity(state,city) values('Goa','Ponda');
+insert into stateandcity(state,city) values('Goa','Siolim');
+insert into stateandcity(state,city) values('Goa','South Goa');
+insert into stateandcity(state,city) values('Goa','Vasco da Gama');
+
+insert into stateandcity(state,city) values('Bihar','Patna');
+insert into stateandcity(state,city) values('Bihar','Gaya');
+insert into stateandcity(state,city) values('Bihar','Bhagalpur');
+insert into stateandcity(state,city) values('Bihar','Muzaffarpur');
+insert into stateandcity(state,city) values('Bihar','Purnia');
+insert into stateandcity(state,city) values('Bihar','Darbhanga');
+insert into stateandcity(state,city) values('Bihar','Bihar Sharif');
+insert into stateandcity(state,city) values('Bihar','Arrah');
+insert into stateandcity(state,city) values('Bihar','Begusarai');
+insert into stateandcity(state,city) values('Bihar','Katihar');
+
+insert into stateandcity(state,city) values('Gujarat','Ahmedabad');
+insert into stateandcity(state,city) values('Gujarat','Surat');
+insert into stateandcity(state,city) values('Gujarat','Vadodara');
+insert into stateandcity(state,city) values('Gujarat','Rajkot');
+insert into stateandcity(state,city) values('Gujarat','Bhavnagar');
+insert into stateandcity(state,city) values('Gujarat','Jamnagar');
+insert into stateandcity(state,city) values('Gujarat','Junagadh');
+insert into stateandcity(state,city) values('Gujarat','Gandhinagar');
+insert into stateandcity(state,city) values('Gujarat','Nadiad');
+insert into stateandcity(state,city) values('Gujarat','Morbi');
+
+insert into stateandcity(state,city) values('Haryana','Ambala');
+insert into stateandcity(state,city) values('Haryana','Bhiwani');
+insert into stateandcity(state,city) values('Haryana','Faridabad');
+insert into stateandcity(state,city) values('Haryana','Fatehabad');
+insert into stateandcity(state,city) values('Haryana','Gurgaon');
+insert into stateandcity(state,city) values('Haryana','Hisar');
+insert into stateandcity(state,city) values('Haryana','Jhajjar');
+insert into stateandcity(state,city) values('Haryana','Jind');
+insert into stateandcity(state,city) values('Haryana','Kaithal');
+insert into stateandcity(state,city) values('Haryana','Karnal');
+
+
+insert into stateandcity(state,city) values('Kerala','Thiruvananthapuram');
+insert into stateandcity(state,city) values('Kerala','Kollam');
+insert into stateandcity(state,city) values('Kerala','Kottayam');
+insert into stateandcity(state,city) values('Kerala','Tiruvalla');
+insert into stateandcity(state,city) values('Kerala','Ernakulam');
+insert into stateandcity(state,city) values('Kerala','Kochi');
+insert into stateandcity(state,city) values('Kerala','Thrissur');
+insert into stateandcity(state,city) values('Kerala','Palakkad');
+insert into stateandcity(state,city) values('Kerala','Malappuram');
+insert into stateandcity(state,city) values('Kerala','Calicut');
+
+insert into stateandcity(state,city) values('Maharashtra','Mumbai');
+insert into stateandcity(state,city) values('Maharashtra','Pune');
+insert into stateandcity(state,city) values('Maharashtra','Nagpur');
+insert into stateandcity(state,city) values('Maharashtra','Thane');
+insert into stateandcity(state,city) values('Maharashtra','Pimpri-Chinchwad');
+insert into stateandcity(state,city) values('Maharashtra','Nashik');
+insert into stateandcity(state,city) values('Maharashtra','Kalyan-Dombivali');
+insert into stateandcity(state,city) values('Maharashtra','Vasai-Virar');
+insert into stateandcity(state,city) values('Maharashtra','Aurangabad');
+insert into stateandcity(state,city) values('Maharashtra','Solapur');
+
+
+insert into stateandcity(state,city) values('Orissa','Bhubaneswar');
+insert into stateandcity(state,city) values('Orissa','Cuttack');
+insert into stateandcity(state,city) values('Orissa','Rourkela');
+insert into stateandcity(state,city) values('Orissa','Brahmapur');
+insert into stateandcity(state,city) values('Orissa','Sambalpur');
+insert into stateandcity(state,city) values('Orissa','Puri');
+insert into stateandcity(state,city) values('Orissa','Balasore');
+insert into stateandcity(state,city) values('Orissa','Bhadrak');
+insert into stateandcity(state,city) values('Orissa','Baripada');
+insert into stateandcity(state,city) values('Orissa','Sundergarh');
+select * from stateandcity;
+  

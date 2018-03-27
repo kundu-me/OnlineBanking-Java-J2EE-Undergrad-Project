@@ -1,0 +1,51 @@
+package org.servlet;
+
+import java.io.IOException;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+/**
+ * Servlet implementation class AdminSendEmailServlet
+ */
+public class AdminSendEmailServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public AdminSendEmailServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+	}
+
+	/**
+	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		
+		String to=request.getParameter("to");
+		String sub=request.getParameter("sub");
+		String message=request.getParameter("body");
+		
+		org.bean.SendEmail email=new org.bean.SendEmail();
+		
+		email.sendEmail(to, sub, message);
+		
+		RequestDispatcher rd=request.getRequestDispatcher("EmailSent.jsp");
+		rd.forward(request, response);
+						
+	}
+
+}

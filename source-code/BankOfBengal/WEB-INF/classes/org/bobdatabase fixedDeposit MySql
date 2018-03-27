@@ -1,0 +1,125 @@
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",7,14,5.00,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",15,29,5.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",30,45,6.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",46,60,7.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",61,90,7.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",91,179,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",180,269,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",270,364,8.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",365,729,9.05,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",730,1094,9.05,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",1095,1824,9.50,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","general",1825,3649,9.75,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",7,14,5.10,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",15,29,5.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",30,45,6.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",46,60,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",61,90,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",91,179,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",180,269,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",270,364,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",365,729,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",730,1094,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",1095,1824,9.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","senior",1825,3649,9.85,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",7,14,5.10,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",15,29,5.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",30,45,6.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",46,60,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",61,90,7.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",91,179,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,prematurepenalty,interest,status)
+  values("public","minor",180,269,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",270,364,8.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",365,729,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",730,1094,9.15,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",1095,1824,9.60,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("public","minor",1825,3649,9.85,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",7,14,5.20,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",15,29,5.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",30,45,6.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",46,60,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",61,90,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",91,179,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",180,269,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",270,364,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",365,729,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",730,1094,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",1095,1824,9.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","general",1825,3649,9.95,1.00,"true");
+  
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",7,14,5.20,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",15,29,5.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",30,45,6.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",46,60,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",61,90,7.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",91,179,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",180,269,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",270,364,8.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",365,729,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",730,1094,9.25,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",1095,1824,9.70,1.00,"true");
+  insert into fixeddepositscheme(customertype,customerage,min_days,max_days,interest,prematurepenalty,status)
+  values("staff","senior",1825,3649,9.95,1.00,"true");
+  

@@ -1,0 +1,111 @@
+insert into stateandcity(state,city) values('Andhra Pradesh','Hyderabad');
+insert into stateandcity(state,city) values('Andhra Pradesh','Visakhapatnam');
+insert into stateandcity(state,city) values('Andhra Pradesh','Vijayawada');
+insert into stateandcity(state,city) values('Andhra Pradesh','Warangal');
+insert into stateandcity(state,city) values('Andhra Pradesh','Guntur');
+insert into stateandcity(state,city) values('Andhra Pradesh','Nellore');
+insert into stateandcity(state,city) values('Andhra Pradesh','Rajahmundry');
+insert into stateandcity(state,city) values('Andhra Pradesh','Kurnool');
+insert into stateandcity(state,city) values('Andhra Pradesh','Tirupati');
+insert into stateandcity(state,city) values('Andhra Pradesh','Kakinada');
+
+insert into stateandcity(state,city) values('West Bengal','Kolkata');
+insert into stateandcity(state,city) values('West Bengal','Howrah');
+insert into stateandcity(state,city) values('West Bengal','Darjeeling');
+insert into stateandcity(state,city) values('West Bengal','Barasat');
+insert into stateandcity(state,city) values('West Bengal','Kharagpur');
+insert into stateandcity(state,city) values('West Bengal','Bardhaman');
+insert into stateandcity(state,city) values('West Bengal','Asansol');
+insert into stateandcity(state,city) values('West Bengal','Durgapur');
+insert into stateandcity(state,city) values('West Bengal','Murshidabad');
+insert into stateandcity(state,city) values('West Bengal','Barrackpore');
+
+insert into stateandcity(state,city) values('Assam','Karimganj');
+insert into stateandcity(state,city) values('Assam','Cachar');
+insert into stateandcity(state,city) values('Assam','Kamrup');
+insert into stateandcity(state,city) values('Assam','Kamrup Metro');
+insert into stateandcity(state,city) values('Assam','Karbi Anglong');
+insert into stateandcity(state,city) values('Assam','Kokrajhar');
+insert into stateandcity(state,city) values('Assam','Golaghat');
+insert into stateandcity(state,city) values('Assam','Goalpara');
+insert into stateandcity(state,city) values('Assam','Chirang');
+insert into stateandcity(state,city) values('Assam','Dibrugarh');
+
+insert into stateandcity(state,city) values('Goa','Mapusa');
+insert into stateandcity(state,city) values('Goa','Margao');
+insert into stateandcity(state,city) values('Goa','North Goa');
+insert into stateandcity(state,city) values('Goa','Old Goa');
+insert into stateandcity(state,city) values('Goa','Panaji');
+insert into stateandcity(state,city) values('Goa','Ponda');
+insert into stateandcity(state,city) values('Goa','Siolim');
+insert into stateandcity(state,city) values('Goa','South Goa');
+insert into stateandcity(state,city) values('Goa','Vasco da Gama');
+
+insert into stateandcity(state,city) values('Bihar','Patna');
+insert into stateandcity(state,city) values('Bihar','Gaya');
+insert into stateandcity(state,city) values('Bihar','Bhagalpur');
+insert into stateandcity(state,city) values('Bihar','Muzaffarpur');
+insert into stateandcity(state,city) values('Bihar','Purnia');
+insert into stateandcity(state,city) values('Bihar','Darbhanga');
+insert into stateandcity(state,city) values('Bihar','Bihar Sharif');
+insert into stateandcity(state,city) values('Bihar','Arrah');
+insert into stateandcity(state,city) values('Bihar','Begusarai');
+insert into stateandcity(state,city) values('Bihar','Katihar');
+
+insert into stateandcity(state,city) values('Gujarat','Ahmedabad');
+insert into stateandcity(state,city) values('Gujarat','Surat');
+insert into stateandcity(state,city) values('Gujarat','Vadodara');
+insert into stateandcity(state,city) values('Gujarat','Rajkot');
+insert into stateandcity(state,city) values('Gujarat','Bhavnagar');
+insert into stateandcity(state,city) values('Gujarat','Jamnagar');
+insert into stateandcity(state,city) values('Gujarat','Junagadh');
+insert into stateandcity(state,city) values('Gujarat','Gandhinagar');
+insert into stateandcity(state,city) values('Gujarat','Nadiad');
+insert into stateandcity(state,city) values('Gujarat','Morbi');
+
+insert into stateandcity(state,city) values('Haryana','Ambala');
+insert into stateandcity(state,city) values('Haryana','Bhiwani');
+insert into stateandcity(state,city) values('Haryana','Faridabad');
+insert into stateandcity(state,city) values('Haryana','Fatehabad');
+insert into stateandcity(state,city) values('Haryana','Gurgaon');
+insert into stateandcity(state,city) values('Haryana','Hisar');
+insert into stateandcity(state,city) values('Haryana','Jhajjar');
+insert into stateandcity(state,city) values('Haryana','Jind');
+insert into stateandcity(state,city) values('Haryana','Kaithal');
+insert into stateandcity(state,city) values('Haryana','Karnal');
+
+
+insert into stateandcity(state,city) values('Kerala','Thiruvananthapuram');
+insert into stateandcity(state,city) values('Kerala','Kollam');
+insert into stateandcity(state,city) values('Kerala','Kottayam');
+insert into stateandcity(state,city) values('Kerala','Tiruvalla');
+insert into stateandcity(state,city) values('Kerala','Ernakulam');
+insert into stateandcity(state,city) values('Kerala','Kochi');
+insert into stateandcity(state,city) values('Kerala','Thrissur');
+insert into stateandcity(state,city) values('Kerala','Palakkad');
+insert into stateandcity(state,city) values('Kerala','Malappuram');
+insert into stateandcity(state,city) values('Kerala','Calicut');
+
+insert into stateandcity(state,city) values('Maharashtra','Mumbai');
+insert into stateandcity(state,city) values('Maharashtra','Pune');
+insert into stateandcity(state,city) values('Maharashtra','Nagpur');
+insert into stateandcity(state,city) values('Maharashtra','Thane');
+insert into stateandcity(state,city) values('Maharashtra','Pimpri-Chinchwad');
+insert into stateandcity(state,city) values('Maharashtra','Nashik');
+insert into stateandcity(state,city) values('Maharashtra','Kalyan-Dombivali');
+insert into stateandcity(state,city) values('Maharashtra','Vasai-Virar');
+insert into stateandcity(state,city) values('Maharashtra','Aurangabad');
+insert into stateandcity(state,city) values('Maharashtra','Solapur');
+
+
+insert into stateandcity(state,city) values('Orissa','Bhubaneswar');
+insert into stateandcity(state,city) values('Orissa','Cuttack');
+insert into stateandcity(state,city) values('Orissa','Rourkela');
+insert into stateandcity(state,city) values('Orissa','Brahmapur');
+insert into stateandcity(state,city) values('Orissa','Sambalpur');
+insert into stateandcity(state,city) values('Orissa','Puri');
+insert into stateandcity(state,city) values('Orissa','Balasore');
+insert into stateandcity(state,city) values('Orissa','Bhadrak');
+insert into stateandcity(state,city) values('Orissa','Baripada');
+insert into stateandcity(state,city) values('Orissa','Sundergarh');
+select * from stateandcity;

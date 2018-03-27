@@ -1,0 +1,100 @@
+create table test(name varchar(30),age int(2));
+
+create table personaldetails
+(cid int not null auto_increment, ctype varchar(10), cage varchar(10),
+ salutation varchar(10), fname varchar(20) not null, mname varchar(20), lname varchar(20) not null,
+ dob date, gender varchar(10),nationality varchar(10),maiden varchar(50),
+ guardian varchar(10), gsalutation varchar(10),gname varchar(50) not null,
+ maritialstatus varchar(30), uidlabel varchar(20), uidno varchar(20),
+ homeno varchar(10),street varchar(50),landmark varchar(50), district varchar(50), 
+ city varchar(20),state varchar(30),pincode varchar(10),
+ addsame varchar(3),
+ xhomeno varchar(10),xstreet varchar(50),xlandmark varchar(50), xdistrict varchar(50), 
+ xcity varchar(20),xstate varchar(30),xpincode varchar(10),
+ mcode varchar(10),mobile varchar(10),lcode varchar(10),landline varchar(10),
+ eid varchar(30), edomain varchar(30),
+ dor date,status varchar(5),
+ primary key (cid));
+ 
+ create table form60
+ (fid int, cid int, salutaion varchar(10), name varchar(50), address varchar(100),
+ openingof int, issueto varchar(50),tamount decimal(12,2),tax varchar(3),
+ document varchar(200),status varchar(5),
+ primary key (fid),
+ foreign key (cid) references personaldetails(cid));
+ 
+ create table additionaldetails
+ (aid int not null auto_increment,cid int, religion varchar(10),category varchar(10),
+  education varchar(30), profession varchar(30), organization varchar(30), designation varchar(30),
+  income int, term varchar(10),
+  assetvalue decimal(12,2), vehicle varchar(10),
+  lifeinsurancevalue decimal(12,2), lifeinsurance varchar(10),
+  loan varchar(10), house varchar(10), mutualfund varchar(10), creditcard varchar(10),
+  it varchar(10),itno varchar(50),status varchar(5),
+  primary key (aid),
+  foreign key (cid) references personaldetails(cid));
+
+ create table personalidentification
+ (pid int not null auto_increment, cid int,
+  idlabel varchar(30), idno varchar(30), idplace varchar(50), iddate date,
+  poilabel varchar(30), poino varchar(30), poiplace varchar(50), poidate date,
+  poalabel varchar(30), poano varchar(30), poaplace varchar(50), poadate date,
+  otheraccount varchar(3), status varchar(5),
+  primary key (pid),
+  foreign key (cid) references personaldetails(cid));
+ 
+create table images
+(imageid int not null auto_increment, cid int,
+ photo varchar(50), poi varchar(50), poa varchar(50), status varchar(5),
+ primary key (imageid),
+ foreign key (cid) references personaldetails(cid));
+
+ create table indextable
+ (indexid varchar(10), indexvalue varchar(50),
+  primary key(indexid));
+  
+  insert into indextable(indexid,indexvalue) values('v0','Others');
+  insert into indextable(indexid,indexvalue) values('v2','Two Wheeler');
+  insert into indextable(indexid,indexvalue) values('v4','Four Wheeler');
+  
+  insert into indextable(indexid,indexvalue) values('lc','Car Loan');
+  insert into indextable(indexid,indexvalue) values('lh','Home Loan');
+  insert into indextable(indexid,indexvalue) values('lp','Personal Loan');
+  insert into indextable(indexid,indexvalue) values('le','Educational Loan');
+  insert into indextable(indexid,indexvalue) values('lb','Business/Agricultural Loan');
+  
+  insert into indextable(indexid,indexvalue) values('is','SBI Life');
+  insert into indextable(indexid,indexvalue) values('io','Others');
+  
+  insert into indextable(indexid,indexvalue) values('ms','SBIMF');
+  insert into indextable(indexid,indexvalue) values('mo','Others');
+  insert into indextable(indexid,indexvalue) values('mn','No Investment');
+ 
+ create table otheraccount
+(sn int not null auto_increment, cid int, noofaccount int,
+ bank varchar(30), branch varchar(30), accounttype varchar(30), accountno varchar(40),
+ status varchar(5),
+ primary key (sn),
+ foreign key (cid) references personaldetails(cid));
+ 
+create table customeraccount
+( accountno int, cid int,
+  username varchar(30), password varchar(30),
+  balance decimal(12,2),
+  status varchar(5),
+  primary key(accountno),
+  foreign key (cid) references personaldetails(cid));
+  
+create table customertransaction
+(tid int not null auto_increment, accountno int,
+ dot date, balancebf decimal(12,2), balancetf decimal(12,2), balanceaf decimal(12,2),
+ credit_debit varchar(10), to_from varchar(10), accountno2 varchar(30),
+ primary key (tid),
+ foreign key (accountno) references customeraccount(accountno));
+ 
+ alter table personaldetails
+add branchcode int after cid;
+
+create table branchdetails
+(branchcode int, branchname varchar(20), 
+ state varchar(20), city varchar(20), pincode varchar(20));

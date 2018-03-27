@@ -1,0 +1,293 @@
+create table branchdetails
+(serial int,branchcode varchar(50), branchname varchar(50), 
+ branchstate varchar(50), branchcity varchar(50), branchpincode varchar(20),
+ branchaddress varchar(100),status varchar(50),
+ primary key(branchcode));
+
+ create table stateandcity
+(serial int not null auto_increment,
+ state varchar(50),
+ city varchar(50),
+ primary key(serial));
+
+create table application
+(serial int not null auto_increment, applicationno int,
+primary key(serial));
+
+
+
+create table personaldetails
+(applicationno int,cid varchar(50), branchcode varchar(50),ctype varchar(50), cage varchar(50),
+ salutation varchar(50), fname varchar(50), mname varchar(50), lname varchar(50),
+ guardian varchar(50), gsalutation varchar(50),gname varchar(50),
+ dob date, gender varchar(50),nationality varchar(50),maiden varchar(50),
+ marital varchar(50), uidlabel varchar(50), uidno varchar(50),
+ homeno varchar(50),street varchar(50),landmark varchar(50), district varchar(50), 
+ city varchar(50),state varchar(50),pincode varchar(50),
+ addsame varchar(50),
+ xhomeno varchar(50),xstreet varchar(50),xlandmark varchar(50), xdistrict varchar(50), 
+ xcity varchar(50),xstate varchar(50),xpincode varchar(50),
+ mcode varchar(50),mobile varchar(50),lcode varchar(50),landline varchar(50),
+ eid varchar(50), edomain varchar(50),email varchar(50),
+ dor date,status varchar(50),
+ primary key (cid),
+ foreign key(branchcode) references branchdetails(branchcode));
+
+create table form60
+(form60no int, cid varchar(50), fullname varchar(50), address varchar(100),
+ openingof varchar(50), issueof varchar(50),tamount decimal(12,2),tax varchar(3),
+ document varchar(200),status varchar(50),
+ primary key (form60no),
+ foreign key (cid) references personaldetails(cid));
+
+create table additionaldetails
+(applicationno int,cid varchar(50), religion varchar(50),category varchar(50),
+ education varchar(50), occupation varchar(50), organization varchar(50), designation varchar(50),
+ income varchar(50), term varchar(50),
+ assetvalue decimal(12,2), vehicle varchar(50),
+ lifeinsurancevalue decimal(12,2), lifeinsurance varchar(50),
+ loan varchar(50), house varchar(50), mutualfund varchar(50), creditcard varchar(50),
+ it varchar(50),itno varchar(50),status varchar(50),
+ primary key (applicationno),
+ foreign key (cid) references personaldetails(cid));
+
+create table personalidentification
+(applicationno int, cid varchar(50),
+ poilabel varchar(50), poino varchar(50), poiplace varchar(50), poidate date,
+ poalabel varchar(50), poano varchar(50), poaplace varchar(50), poadate date,
+ otheraccount int, status varchar(55),
+ primary key (applicationno),
+ foreign key (cid) references personaldetails(cid));
+
+create table otheraccounts
+(serial varchar(50), cid varchar(50),
+ bank varchar(50), branch varchar(50), accounttype varchar(50), accountno varchar(50),
+ status varchar(50),
+ primary key (serial),
+ foreign key (cid) references personaldetails(cid));
+ 
+create table customeraccount
+(serial int,accountno varchar(50), cid varchar(50),branchcode varchar(50),email varchar(50),
+ username varchar(50), password varchar(50),
+ balance double,
+ status varchar(50),
+ primary key(accountno),
+ foreign key (cid) references personaldetails(cid));
+
+
+create table applicationstatus
+(applicationno int,cid varchar(50),email varchar(50),branchcode varchar(50),status varchar(50),remarks varchar(100),
+ primary key(applicationno),
+ foreign key(cid) references personaldetails(cid));
+
+
+create table news
+(serial int not null auto_increment, heading varchar(100), details varchar(400),timestamp1 date,status varchar(50),
+primary key (serial));
+
+
+
+ create table customerlogin
+ (
+ serial int not null auto_increment,
+ username varchar(50),
+ accountno varchar(50),
+ ipaddress varchar(50),
+ logintimestamp timestamp,
+ primary key(serial),
+ foreign key(accountno) references customeraccount(accountno));
+ 
+ create table customersettings
+ (
+ username varchar(50),
+ accountno varchar(50),
+ password varchar(50),
+ question varchar(200),
+ answer varchar(200),
+ twostepverification varchar(50),
+ settings varchar(1000),
+ status varchar(50),
+ primary key(username),
+ foreign key(accountno) references customeraccount(accountno));
+ 
+ 
+ create table moneytransfer
+ (transactionid varchar(50),
+  branchcode varchar(50),
+  email varchar(50),
+  sender_accountno varchar(50),
+  receiver_accountno varchar(50),
+  receiver_bank varchar(50),
+  amount double,
+  bankcharges double,
+  totalamount double,
+  transactiontimestamp timestamp,
+  status varchar(50),
+  primary key(transactionid),
+  foreign key(sender_accountno) references customeraccount(accountno));
+ 
+ create table transactiondetails
+  (serial int not null auto_increment,
+   accountno varchar(50),
+   branchcode varchar(50),
+   transactionid varchar(50),
+   transactiontype varchar(50),
+   transactionamount double,
+   balance double,
+   remarks varchar(100),
+   transactiontimestamp timestamp,
+   status varchar(50),
+   primary key(serial),
+   foreign key(accountno) references customeraccount(accountno));
+ 
+    
+    create table fixeddepositscheme
+  ( serial int not null auto_increment,
+    customertype varchar(50),
+    customerage varchar(50),
+    min_days int,
+    max_days int,
+    interest double,
+    prematurepenalty double,
+    status varchar(50),
+    primary key(serial));
+ 
+ 
+ 
+   create table fixeddepositdetails
+ ( fid varchar(50),
+   accountno varchar(50),
+   branchcode varchar(50),
+   ctype varchar(50),
+   cage varchar(50),
+   name varchar(50),
+   dob date,
+   nationality varchar(50),
+   uidlabel varchar(50),
+   uidno varchar(50),
+   caddress varchar(500),
+   paddress varchar(500),
+   mobile varchar(50),
+   landline varchar(50),
+   email varchar(50),
+   it varchar(50),
+   itno varchar(50),
+   status varchar(50),
+   primary key(fid),
+   foreign key(accountno) references customeraccount(accountno));
+   
+
+    create table fixeddeposit
+ (transactionid varchar(50),
+  fid varchar(50),
+  accountno varchar(50),
+  branchcode varchar(50),
+  email varchar(50),
+  amount double,
+  interest double,
+  prematurepenalty double,
+  term int,
+  start_date date,
+  end_date date,
+  transactiontimestamp timestamp,
+  status varchar(50),
+  primary key(transactionid),
+  foreign key(accountno) references customeraccount(accountno),
+  foreign key(fid) references fixeddepositdetails(fid));
+
+   create table fixeddepositmature
+   (
+   	serial int not null auto_increment,
+   	fid varchar(50),
+   	transactionid varchar(50),
+   	accountno varchar(50),
+   	branchcode varchar(50),
+   	amount double,
+   	interestamount double,
+   	prematurepenaltyamount double,
+   	totalamount double,
+   	mature_date date,
+   	primary key(serial),
+   	foreign key(fid) references fixeddepositdetails(fid),
+   	foreign key(transactionid) references fixeddeposit(transactionid)); 
+   
+ create table adminaccount
+ (
+  username varchar(50),
+  password varchar(50),
+  branchcode varchar(50),
+  name varchar(100),
+  email varchar(50),
+  status varchar(50),
+  primary key(username));
+  
+ 
+
+ create table adminlogin
+ (
+ serial int not null auto_increment,
+ username varchar(50),
+ logintimestamp timestamp,
+ ipaddress varchar(50),
+ primary key(serial),
+ foreign key(username) references adminaccount(username));
+
+create table bankconstraints
+( serial int not null auto_increment,
+  name varchar(100),
+  value varchar(100),
+  type varchar(50),
+  primary key(serial));
+  
+  
+  create table addcustomeraccount
+  ( serial int not null auto_increment,
+    username varchar(50),
+    accountno varchar(50),
+    status varchar(50),
+    primary key(serial));
+
+ create table bankaccount
+ ( serial int not null auto_increment,
+   transactionid varchar(50),
+   accountno varchar(50),
+   branchcode varchar(50),
+   bankcharges double,
+   transactiontype varchar(50),
+   transactiontimestamp timestamp,
+   status varchar(50),
+   primary key(serial),
+   foreign key(accountno) references customeraccount(accountno));
+   
+   create table complainbox
+   (serial int not null auto_increment,
+    email varchar(50),
+    subject varchar(1000),
+    complain varchar(1000),
+    reply varchar(1000),
+    status varchar(50),
+    primary key(serial));
+
+
+ create table adminpassword
+(serial int not null auto_increment,
+ username varchar(50),
+ tpassword varchar(50),
+ tdate date,
+ ttime time,
+ status varchar(50),
+ primary key(serial),
+ foreign key(username) references adminaccount(username));
+
+
+create table customerpassword
+(serial int not null auto_increment,
+ username varchar(50),
+ accountno varchar(50),
+ tpassword varchar(50),
+ tdate date,
+ ttime time,
+ status varchar(50),
+ primary key(serial),
+ foreign key(accountno) references customeraccount(accountno));
+    
